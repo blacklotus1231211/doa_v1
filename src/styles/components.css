@@ -1,0 +1,87 @@
+/* Hero Section */
+.hero {
+  text-align: center;
+  padding: 4rem 0;
+  background: linear-gradient(135deg, var(--secondary-color) 0%, var(--background-color) 100%);
+  border-radius: 2rem;
+  margin: 2rem 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: 
+    radial-gradient(circle at 10% 20%, rgba(255, 182, 193, 0.1) 0%, transparent 20%),
+    radial-gradient(circle at 90% 30%, rgba(255, 182, 193, 0.1) 0%, transparent 20%),
+    radial-gradient(circle at 50% 80%, rgba(255, 182, 193, 0.1) 0%, transparent 20%);
+  z-index: 0;
+}
+
+.profile-image-container {
+  position: relative;
+  margin: 2rem auto;
+  width: 220px;
+  height: 220px;
+  animation: float 6s ease-in-out infinite;
+}
+
+.profile-image-container::before {
+  content: '';
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  right: -10px;
+  bottom: -10px;
+  border-radius: 50%;
+  background: linear-gradient(45deg, var(--accent-color), #ff9ecd);
+  animation: pulse 2s infinite;
+  z-index: 1;
+}
+
+.profile-image {
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 8px solid white;
+  box-shadow: 0 4px 15px rgba(255, 105, 180, 0.3);
+  position: relative;
+  z-index: 2;
+  background-color: white;
+}
+
+/* Background Decorations */
+.decoration {
+  position: absolute;
+  opacity: 0.1;
+  z-index: 1;
+}
+
+.decoration.heart-1 {
+  top: 10%;
+  left: 5%;
+  font-size: 2rem;
+  animation: float 5s ease-in-out infinite;
+}
+
+.decoration.heart-2 {
+  top: 20%;
+  right: 10%;
+  font-size: 3rem;
+  animation: float 7s ease-in-out infinite;
+}
+
+.decoration.heart-3 {
+  bottom: 15%;
+  left: 15%;
+  font-size: 2.5rem;
+  animation: float 6s ease-in-out infinite;
+}
+
+/* Rest of the existing styles... */

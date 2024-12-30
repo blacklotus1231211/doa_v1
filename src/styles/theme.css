@@ -1,0 +1,23 @@
+:root {
+  --primary: #FF69B4;
+  --primary-light: #FFC0CB;
+  --primary-dark: #FF1493;
+  --secondary: #FFF0F5;
+  --accent: #FFB6C1;
+  --text: #4A4A4A;
+  --text-light: #6B6B6B;
+  --white: #FFFFFF;
+  --shadow: rgba(255, 105, 180, 0.3);
+  
+  /* Spacing */
+  --spacing-xs: 0.5rem;
+  --spacing-sm: 1rem;
+  --spacing-md: 2rem;
+  --spacing-lg: 4rem;
+  
+  /* Border Radius */
+  --radius-sm: 0.5rem;
+  --radius-md: 1rem;
+  --radius-lg: 2rem;
+  --radius-full: 50%;
+}

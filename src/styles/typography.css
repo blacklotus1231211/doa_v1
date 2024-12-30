@@ -1,0 +1,36 @@
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Nunito', sans-serif;
+  font-weight: 800;
+  line-height: 1.2;
+  color: var(--primary-dark);
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: var(--spacing-md);
+  text-shadow: 2px 2px 4px var(--shadow);
+}
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: var(--spacing-md);
+}
+
+.highlight {
+  font-size: 1.2rem;
+  color: var(--primary);
+  font-weight: 700;
+  line-height: 1.8;
+  margin: var(--spacing-md) 0;
+}
+
+.story-text {
+  font-size: 1.1rem;
+  color: var(--text);
+  max-width: 600px;
+  margin: 0 auto;
+  padding: var(--spacing-md);
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: var(--radius-md);
+  box-shadow: 0 4px 15px var(--shadow);
+}
